@@ -10,9 +10,15 @@ module.exports = {
     publicPath: 'http://localhost:8080/'
   },
   module: {
+    preLoaders: [
+      { test: /\.js$/, loader: 'eslint-loader', exclude: /node_modules/ }
+    ],
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
     ]
   },
-  plugins: [ new HtmlWebpackPlugin() ]
+  plugins: [ new HtmlWebpackPlugin() ],
+  eslint: {
+    formatter: require("eslint-friendly-formatter")
+  }
 }
