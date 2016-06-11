@@ -2,7 +2,7 @@ var path = require('path')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   entry: [
-    './src/entry.js'
+    './entry.js'
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
