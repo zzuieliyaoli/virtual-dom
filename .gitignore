@@ -1,0 +1,14 @@
+.idea/
+.DS_Store
+node_modules/
+demo/
+build/
+dist/
+*.swp
+*.map
+*~
+.sass-cache
+.project
+*.prefs
+*.scssclear
+npm-debug.log
