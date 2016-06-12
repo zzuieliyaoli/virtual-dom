@@ -19,7 +19,7 @@ class Vnode {
   render() {
     let node = document.createElement(this.tagName)
     Object.keys(this.props).forEach((prop) => {
-      node.setAttribute(prop, this.props.prop)
+      node.setAttribute(prop, this.props[prop])
     })
     this.children.forEach((child) => {
       let childEl = this.isVnode(child) ? child.render() : document.createTextNode(child)
